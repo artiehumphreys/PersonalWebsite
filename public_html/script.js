@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navlinks.forEach(function(){
         navlinks.addEventListener('click', function(){
-            
             const yOffset = -500; 
             const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({top : y, behavior:'smooth'});
