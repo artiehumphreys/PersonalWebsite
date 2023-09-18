@@ -1,9 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     const footer = document.querySelector('.footer');
     const paths = document.querySelectorAll('path');
     const navlinks = document.querySelectorAll('.nav');
-    var oneTab = false;
 
     const scrollThreshold = 125;
 
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (scrollY > scrollThreshold) {
             navbar.style.top = '0';
         } else {
-            navbar.style.top = '-60px'; 
+            navbar.style.top = '-60px';
         }
 
         if (scrollY > scrollThreshold) {
@@ -25,20 +24,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', handleScroll);
 
-    paths.forEach(function(path){
-        path.addEventListener('click', function(){
+    paths.forEach(function (path) {
+
+        path.addEventListener('click', function () {
             window.open('https://codepen.io/PickJBennett/details/BdbrMW', '_blank');
         });
     });
 
-    navlinks.forEach(function(){
-        navlinks.addEventListener('click', function(){
-            const yOffset = -500; 
-            const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({top : y, behavior:'smooth'});
+    navlinks.forEach(function (navlink) {
+        navlink.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = navlink.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const yAdjustment = -75;
+                const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yAdjustment;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         });
     });
 
-    
+
 
 });
