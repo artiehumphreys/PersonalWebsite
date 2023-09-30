@@ -18,6 +18,7 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+      background-color: #ffffff;
     }
 
     nav {
@@ -34,9 +35,6 @@
       background-color: ;
     } */
 
-    .timeline-entry{
-      backdrop-filter: saturate(180%) blur(40px);
-    }
     nav ul {
       list-style-type: none;
       margin: 0 auto;
@@ -62,9 +60,34 @@
       color: #ffffff;
     }
 
-    /* .timeline{
-      background-color: aqua;
-    } */
+    .timeline{
+      z-index: 5;
+    }
+
+    .timeline-entry {
+      margin-bottom: 20px;
+    }
+
+    .timeline-box {
+      background-color: rgba(44, 106, 204, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      /* width: 80%; */
+      margin: 0 auto;
+    }
+
+    .timeline-header {
+      flex: 1;
+      font-size: 36px;
+      /* color: white; */
+    }
+
+    .timeline-description {
+      flex: 1;
+      font-size: 24px;
+    }
 
     header {
       position: relative;
@@ -78,7 +101,7 @@
     }
 
     main {
-      max-width: 800px;
+      max-width: 75vw;
       margin: 20px auto;
       padding: 20px;
     }
@@ -147,7 +170,6 @@
       z-index: 2;
       color: #000000;
     }
-
   </style>
 </head>
 
@@ -155,16 +177,16 @@
   <nav class="navbar">
     <ul>
       <li>
-        <a  href="#about" , class="nav">About Me</a>
+        <a href="#about" , class="nav">About Me</a>
       </li>
       <li>
         <a href="#education" , class="nav">Education</a>
       </li>
       <li>
-        <a  href="#projects" , class="nav">Projects</a>
+        <a href="#projects" , class="nav">Projects</a>
       </li>
       <li>
-        <a  href="#contact" , class="nav">Contact Me</a>
+        <a href="#contact" , class="nav">Contact Me</a>
       </li>
     </ul>
   </nav>
@@ -326,21 +348,28 @@
   </header>
 
   <main>
-    <!-- <p style = "font-size: 250%;">
+    <!-- <p style="font-size: 250%;">
       My name is Artie Humphreys and I am a second-year student at the University of Virginia, pursuing a bachelor of
       arts in computer science and mathematics.
-    </p>
-    <section class = "timeline">
-      <article class = "timeline-entry">
-        <h3 style = "font-size: 200%;"> About me</h3>
-        <span class = "description" >My name is Artie Humphreys and I am a second-year student at the University of Virginia, pursuing a bachelor of
-          arts in computer science and mathematics.</span>
+    </p> -->
+    <section class="timeline">
+      <article class="timeline-entry">
+        <div class="timeline-box">
+          <div class="timeline-header">
+            <h3>About me</h3>
+          </div>
+          <div class="timeline-description">
+            <span>My name is Artie Humphreys, and I am a second-year student at the University of Virginia, pursuing a
+              bachelor of arts in computer science and mathematics.</span>
+          </div>
+        </div>
       </article>
-    </section> -->
+    </section>
     <h2 id="about">About Me</h2>
     <p>
-      My name is Artie Humphreys and I am a second-year student at the University of Virginia, pursuing a bachelor of
-      arts in computer science and mathematics.
+      I am a second-year student at the University of Virginia, pursuing a bachelor of arts in computer science and
+      mathematics
+      concentrating in data analytics and software development.
     </p>
 
     <h2 id="education">Education</h2>
@@ -352,8 +381,8 @@
         <p>CS 2100: Data Structures and Algorithms I</p>
         <p>CS 2130: Computer Systems and Organization I</p>
         <p>CS 3140: Software Development Essentials</p>
-        <p>Math 3351: Elementary Linear Algebra</p>
-        <p>Math 3250: Ordinary Differential Equations</p>
+        <p>MATH 3351: Elementary Linear Algebra</p>
+        <p>MATH 3250: Ordinary Differential Equations</p>
       </ul>
       </p>
     </ol>
@@ -362,7 +391,7 @@
     <h2 id="projects">Projects</h2>
     <ul>
       <li>
-        <a target=”_blank” href = "https://github.com/artiehumphreys/PDFChat">PDF Chat</a>
+        <a target=”_blank” href="https://github.com/artiehumphreys/PDFChat">PDF Chat</a>
       </li>
       <p>
       <ul>
@@ -372,12 +401,12 @@
       </ul>
       </p>
       <li>
-        <a target = "_blank" href = "https://glitch.com/~chatroom122">Chatroom</a>
+        <a target="_blank" href="https://glitch.com/~chatroom122">Chatroom</a>
       </li>
       <p>
-        <ul>
-          A simple Node chatroom built on Express.
-        </ul>
+      <ul>
+        A simple Node chatroom built on Express.
+      </ul>
       </p>
       <li>Brick Breaker Game</li>
       <p>
@@ -388,17 +417,17 @@
       </p>
       <li>This Website</li>
       <p>
-        <ul>
-          This website initially originated as a project assigned during my Computer Systems and Organizations course, 
-          but has since evolved into a personal portfolio showcasing my work and progress.
-        </ul>
+      <ul>
+        This website initially originated as a project assigned during my Computer Systems and Organizations course,
+        but has since evolved into a personal portfolio showcasing my work and progress. Written in HTML and vanilla JS.
+      </ul>
       </p>
     </ul>
 
     <h2 id="contact">Contact Information</h2>
     <p>
-      <a target=”_blank” class="fa fa-envelope" href = "mailto: artieh2003@gmail.com"></a>
-      <label for = "fa-envelope">Email: artieh2003@gmail.com</label>
+      <a target=”_blank” class="fa fa-envelope" href="mailto: artieh2003@gmail.com"></a>
+      <label for="fa-envelope">Email: artieh2003@gmail.com</label>
       <br>
       <a target=”_blank” class="fa fa-github" href="https://www.github.com/artiehumphreys/"></a>
       <label for="fa-instagram">GitHub: artiehumphreys</label>
