@@ -69,11 +69,13 @@
     }
 
     .timeline-box {
-      background-color: rgba(44, 106, 204, 0.3);
+      background-color: rgba(44, 106, 204, 0.5);
       border-radius: 10px;
       padding: 20px;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       /* width: 80%; */
       margin: 0 auto;
     }
@@ -81,12 +83,17 @@
     .timeline-header {
       flex: 1;
       font-size: 30px;
+      display: flex;
       /* color: white; */
+      align-self: left;
+      
+      /* justify-content: left; */
     }
 
     .timeline-description {
       flex: 1;
-      font-size: 20px;
+      font-size: 18px;
+      align-self: center;
     }
 
     header {
