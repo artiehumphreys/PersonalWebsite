@@ -86,7 +86,7 @@
       display: flex;
       /* color: white; */
       align-self: left;
-      
+
       /* justify-content: left; */
     }
 
@@ -94,6 +94,26 @@
       flex: 1;
       font-size: 1.3rem;
       align-self: center;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-box {
+        width: 95%;
+      }
+
+      .timeline-header {
+        font-size: 1.5rem;
+        align-self: left;
+      }
+
+      .timeline-description {
+        font-size: 1rem;
+        align-self: center;
+      }
+
+      .contact{
+          font-size: .2 rem;
+      }
     }
 
     header {
@@ -126,7 +146,7 @@
 
 
     .fa {
-      font-size: 30px;
+      font-size: 2rem;
       text-align: center;
       text-decoration: none;
       margin: 5px 2px;
@@ -351,25 +371,26 @@
           </g>
         </svg></div>
     </a>
-    <h1 style = "font-size: 2.5rem;">Artie Humphreys (bsg6vr)</h1>
+    <h1 style="font-size: 2.5rem;">Artie Humphreys (bsg6vr)</h1>
   </header>
 
   <main>
     <section class="timeline">
       <article class="timeline-entry">
-        <div class="timeline-box" id = "about">
+        <div class="timeline-box" id="about">
           <div class="timeline-header">
             <h3>About Me</h3>
           </div>
           <div class="timeline-description">
             <span>My name is Artie Humphreys, and I am a second-year student at the University of Virginia, pursuing a
-              bachelor of arts in computer science and mathematics concentrating in data analytics and software development. </span>
+              bachelor of arts in computer science and mathematics concentrating in data analytics and software
+              development. </span>
           </div>
         </div>
       </article>
 
       <article class="timeline-entry">
-        <div class="timeline-box" id = "education">
+        <div class="timeline-box" id="education">
           <div class="timeline-header">
             <h3>Education</h3>
           </div>
@@ -377,20 +398,20 @@
             <span>
               <p> GPA: 3.91</p>
               <p> Relevant Coursework:
-                <ul >
-                  <li style = "margin-bottom: 10px;">CS 2100: Data Structures and Algorithms I</li>
-                  <li style = "margin-bottom: 10px;">CS 2130: Computer Systems and Organization I</li>
-                  <li style = "margin-bottom: 10px;">CS 3140: Software Development Essentials</li>
-                  <li style = "margin-bottom: 10px;">MATH 3351: Elementary Linear Algebra</li>
-                  <li style = "margin-bottom: 10px;">MATH 3250: Ordinary Differential Equations</li>
-                </ul>
+              <ul>
+                <li style="margin-bottom: 10px;">CS 2100: Data Structures and Algorithms I</li>
+                <li style="margin-bottom: 10px;">CS 2130: Computer Systems and Organization I</li>
+                <li style="margin-bottom: 10px;">CS 3140: Software Development Essentials</li>
+                <li style="margin-bottom: 10px;">MATH 3351: Elementary Linear Algebra</li>
+                <li style="margin-bottom: 10px;">MATH 3250: Ordinary Differential Equations</li>
+              </ul>
             </span>
           </div>
         </div>
       </article>
 
       <article class="timeline-entry">
-        <div class="timeline-box" id = "projects">
+        <div class="timeline-box" id="projects">
           <div class="timeline-header">
             <h3>Projects</h3>
           </div>
@@ -440,7 +461,11 @@
       </article>
     </section>
 
-    <p style = "font-size: 1.8rem;" id = "contact">You can follow me on <a target="_blank" href="https://www.linkedin.com/in/artiehumphreys/">LinkedIn</a>, <a target="_blank" href="https://www.twitter.com/HumphreysArtie">Twitter</a>, and <a target="_blank" href="https://www.instagram.com/artiehumphreys/">Instagram</a>. Here's my <a target="_blank" href="mailto:artieh2003@gmail.com">Email</a></p>
+    <p style="font-size: 1.8rem;" id="contact">You can follow me on <a target="_blank"
+        href="https://www.linkedin.com/in/artiehumphreys/">LinkedIn</a>, <a target="_blank"
+        href="https://www.twitter.com/HumphreysArtie">Twitter</a>, and <a target="_blank"
+        href="https://www.instagram.com/artiehumphreys/">Instagram</a>. Here's my <a target="_blank"
+        href="mailto:artieh2003@gmail.com">Email</a></p>
 
   </main>
 
