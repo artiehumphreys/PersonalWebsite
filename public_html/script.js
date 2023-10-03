@@ -22,14 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    
 
-    paths.forEach(function (path) {
+    var isWindowOpened = false;
 
-        path.addEventListener('click', function () {
-            window.open('https://codepen.io/PickJBennett/details/BdbrMW', '_blank');
-        });
-    });
+function openWindowOnce() {
+    if (!isWindowOpened) {
+        window.open('https://codepen.io/PickJBennett/details/BdbrMW', '_blank');
+        isWindowOpened = true;
+    }
+}
+
+document.getElementById('page-wrap').addEventListener('click', openWindowOnce);
 
     navlinks.forEach(function (navlink) {
         navlink.addEventListener('click', function (event) {
@@ -45,6 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-
+    window.addEventListener('scroll', handleScroll);
 
 });
