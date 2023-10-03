@@ -96,23 +96,6 @@
       align-self: center;
     }
 
-    @media (max-width: 768px) {
-      .timeline-box {
-        flex-direction: column;
-        width: 95%;
-      }
-
-      .timeline-header {
-        font-size: 1.25rem;
-        align-self: left;
-      }
-
-      .timeline-description {
-        font-size: 0.85rem;
-        align-self: center;
-      }
-    }
-
     header {
       position: relative;
       background-color: #cfdff5;
@@ -187,12 +170,33 @@
     }
 
     h1 {
+      font-size: 2.5rem;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
       color: #000000;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-box {
+        flex-direction: column;
+        width: 95%;
+      }
+
+      .timeline-header {
+        font-size: 1.5rem;
+        align-self: left;
+      }
+
+      .timeline-description {
+        font-size: 1.05rem;
+        align-self: center;
+      }
+      h1{
+        font-size: 2.25rem;
+      }
     }
   </style>
 </head>
@@ -368,7 +372,7 @@
           </g>
         </svg></div>
     </a>
-    <h1 style="font-size: 2.5rem;">Artie Humphreys (bsg6vr)</h1>
+    <h1>Artie Humphreys (bsg6vr)</h1>
   </header>
 
   <main>
